@@ -184,25 +184,38 @@ export const projects = [
 
 export const experiences = [
   {
-    company: "Independent Studio",
-    title: "Founder / Lead Developer",
-    period: "2020 -- Present",
+     company: "Independent",
+     title: "Founder & Lead Engineer",
+     period: "2025 -- Present",
+     achievements: [
+       "Building and maintaining production systems including Wakala Portal, Football Intel, and Opsync.",
+       "Designing and implementing full-stack solutions across web, mobile, and backend services.",
+       "Developing transaction-heavy and real-time systems with secure authentication and role-based access.",
+       "Managing system architecture, deployments, and infrastructure using Docker, VPS, and modern tooling."
+     ]
+   },
+  {
+    company: "Amecore Technologies Co. Ltd",
+    title: "Software Developer",
+    period: "2024 -- 2025",
     achievements: [
-      "Built fintech infrastructure products used by regulated teams across the US.",
-      "Reduced reconciliation time from days to minutes through event-sourced systems.",
-      "Led cross-functional launches with security-first architecture and audit readiness."
+      "Developed full-stack financial solutions including POS systems, mobile apps, and web applications.",
+      "Worked on core banking-related platforms such as Winvo and internal financial tools.",
+      "Designed and implemented backend services, APIs, and system architectures.",
+      "Handled infrastructure setup and deployments using VPS, Docker, and production-ready environments."
     ]
   },
   {
-    company: "Orbit Financial",
-    title: "Senior Full-Stack Engineer",
-    period: "2017 -- 2020",
+    company: "Oohbit Co. Ltd",
+    title: "Frontend Developer",
+    period: "2022 -- 2023",
     achievements: [
-      "Delivered payment reliability improvements, cutting failed transfers by 38%.",
-      "Automated compliance reporting workflows for SOC2 and PCI readiness.",
-      "Introduced performance budgets and observability dashboards for executive visibility."
+      "Built and maintained user-friendly web interfaces for multiple client projects.",
+      "Worked on financial employee payment systems with a focus on clarity and usability.",
+      "Developed frontend solutions for a digital billboard management platform.",
+      "Collaborated with backend teams to deliver stable and responsive applications."
     ]
-  }
+  },
 ];
 
 export const howIBuildSystems = [
