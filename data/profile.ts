@@ -3,16 +3,16 @@ export const profile = {
   role: "Full-Stack Developer / Fintech Engineer",
   headline:
     "I build resilient financial platforms, developer tooling, and data-intensive products with an obsession for clarity, security, and performance.",
-  location: "United States",
-  email: "hello@meshack.dev",
+  location: "Tanzania",
+  email: "kazimoto17@proton.me",
   socials: {
-    github: "https://github.com/meshack",
-    linkedin: "https://www.linkedin.com/in/meshack"
+    github: "https://github.com/meshackkazimoto",
+    linkedin: "https://www.linkedin.com/in/meshackkazimoto"
   }
 };
 
 export const metrics = [
-  { label: "Years Experience", value: "8+" },
+  { label: "Years Experience", value: "4+" },
   { label: "Products Shipped", value: "20+" },
   { label: "Systems Built", value: "35+" },
   { label: "Latency Wins", value: "<50ms" }
@@ -26,9 +26,9 @@ export const techStack = [
   "Redis",
   "Kafka",
   "AWS",
-  "Terraform",
+  "Spring Boot",
   "Security",
-  "Observability"
+  "Python"
 ];
 
 export const projects = [

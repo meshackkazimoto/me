@@ -34,7 +34,7 @@ export function Footer() {
         </div>
         <div className="mt-10 flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-muted">
           <span>© {new Date().getFullYear()} {profile.name}</span>
-          <span>Built with Next.js, Tailwind, and Framer Motion.</span>
+          <span>Built by Meshack Kazimoto</span>
         </div>
       </Container>
     </footer>
