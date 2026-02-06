@@ -7,7 +7,7 @@ export const profile = {
   email: "kazimoto17@proton.me",
   socials: {
     github: "https://github.com/meshackkazimoto",
-    // linkedin: "https://www.linkedin.com/in/meshackkazimoto",
+    linkedin: "https://www.linkedin.com/in/meshackkazimoto",
     x: "https://x.com/dmesha_"
   }
 };

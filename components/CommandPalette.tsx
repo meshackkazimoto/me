@@ -25,6 +25,11 @@ const commands = [
     label: "Open LinkedIn",
     href: profile.socials.linkedin,
     category: "Links"
+  },
+  {
+    label: "Open X",
+    href: profile.socials.x,
+    category: "Links"
   }
 ];
 
