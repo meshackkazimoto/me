@@ -22,12 +22,12 @@ export function Footer() {
               GitHub
             </Link>
             <Link
-              href={profile.socials.linkedin}
+              href={profile.socials.x}
               className="border border-border px-3 py-2 text-xs uppercase tracking-[0.2em] text-fg transition-colors hover:border-fg"
               target="_blank"
               rel="noreferrer"
             >
-              LinkedIn
+              X
             </Link>
             <CopyButton value={profile.email} label="Copy Email" />
           </div>

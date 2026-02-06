@@ -7,7 +7,8 @@ export const profile = {
   email: "kazimoto17@proton.me",
   socials: {
     github: "https://github.com/meshackkazimoto",
-    linkedin: "https://www.linkedin.com/in/meshackkazimoto"
+    // linkedin: "https://www.linkedin.com/in/meshackkazimoto",
+    x: "https://x.com/dmesha_"
   }
 };
 
@@ -223,23 +224,26 @@ export const howIBuildSystems = [
 ];
 
 export const currentFocus = [
-  "Financial infrastructure with audit-ready data pipelines",
-  "Real-time monitoring + alerting for high-stakes workflows",
-  "Developer experience for regulated engineering teams"
+  "Financial infrastructure and transaction-heavy systems",
+  "Applied AI tools for automation and decision support",
+  "Building scalable developer and operational tools for real-world products in Tanzania"
 ];
 
 export const currentlyBuilding = [
   {
-    title: "Ledger Control Plane",
-    detail: "Unified orchestration for multi-entity books, approvals, and policy enforcement."
+    title: "Wakala Portal",
+    detail:
+      "A WhatsApp-driven platform that automates float exchanges between agents and super agents, reducing manual coordination."
   },
   {
-    title: "Risk Signal Studio",
-    detail: "Low-code risk modeling with explainable outputs and compliance exports."
+    title: "Football Intel",
+    detail:
+      "A sports data and analytics platform for the Tanzania Premier League with advanced stats and prediction logic."
   },
   {
-    title: "FinOps Observability",
-    detail: "Cost + reliability dashboards tuned for payment-heavy environments."
+    title: "Opsync",
+    detail:
+      "A modern office management system focused on operational efficiency, built with a fast and scalable architecture."
   }
 ];
 

@@ -86,14 +86,14 @@ export default function ContactPage() {
                 </Link>
                 <CopyButton value={profile.socials.github} label="Copy GitHub" />
                 <Link
-                  href={profile.socials.linkedin}
+                  href={profile.socials.x}
                   className="text-sm uppercase tracking-[0.2em] text-fg underline underline-offset-4"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  LinkedIn
+                  X
                 </Link>
-                <CopyButton value={profile.socials.linkedin} label="Copy LinkedIn" />
+                <CopyButton value={profile.socials.x} label="Copy X" />
               </div>
             </Card>
             <Card>
