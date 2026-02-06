@@ -28,42 +28,156 @@ export const techStack = [
   "AWS",
   "Spring Boot",
   "Security",
-  "Python"
+  "Python",
+  "Rust"
 ];
 
 export const projects = [
   {
-    name: "Pulse Ledger",
+    name: "Winvo",
     description:
-      "Real-time ledger infrastructure for regulated fintech teams with deterministic audit trails.",
+      "An invoice financing platform that connects borrowers with investors to unlock working capital.",
     problem:
-      "Traditional ledgers struggle with reconciliation lag and audit complexity across multi-entity products.",
+      "Small businesses struggle to access quick funding while investors lack transparent, structured investment opportunities.",
     solution:
-      "Designed an event-sourced core with immutable state, automated reconciliation, and policy-driven approvals.",
-    tech: ["TypeScript", "Node.js", "PostgreSQL", "Kafka"],
-    role: "Founder / Lead Engineer"
-  },
-  {
-    name: "Signal Compliance",
-    description:
-      "Compliance automation that flags anomalous transactions and documents decisions in minutes.",
-    problem:
-      "Manual reviews create bottlenecks and inconsistent regulatory documentation.",
-    solution:
-      "Built a risk engine with explainable scoring and templated evidence capture for audit-ready exports.",
-    tech: ["Python", "FastAPI", "PostgreSQL", "AWS"],
+      "Built a platform where borrowers post invoices and investors fund them, with clear returns, lifecycle tracking, and secure role-based access.",
+    tech: ["Next.js", "Spring Boot", "PostgreSQL", "Docker"],
     role: "Lead Developer"
   },
   {
-    name: "Atlas Payments",
+    name: "Mobile Banking App (DCB Commercial Bank)",
     description:
-      "Global payout orchestration with multi-rail routing and real-time status tracking.",
+      "A mobile banking application enabling customers to perform secure financial transactions.",
     problem:
-      "Operations teams lacked visibility into failures across fragmented payment providers.",
+      "Bank customers needed a reliable and easy-to-use mobile channel for daily banking services.",
     solution:
-      "Implemented a routing layer with live observability and automated retry logic by corridor.",
-    tech: ["Next.js", "Node.js", "Redis", "OpenTelemetry"],
-    role: "Platform Engineer"
+      "Implemented a clean and intuitive Flutter-based mobile interface focused on usability, performance, and secure transaction flows.",
+    tech: ["Flutter"],
+    role: "Frontend Developer"
+  },
+  {
+    name: "Wakala Portal",
+    description:
+      "A WhatsApp-based platform that simplifies float exchanges between agents and super agents.",
+    problem:
+      "Manual coordination between agents caused delays, errors, and lack of transaction visibility.",
+    solution:
+      "Built a system that automates float requests and approvals through WhatsApp, with real-time tracking and a centralized admin dashboard.",
+    tech: [
+      "Next.js",
+      "React Native",
+      "PostgreSQL",
+      "Prisma",
+      "WhatsApp API"
+    ],
+    role: "Lead Developer"
+  },
+  {
+    name: "Crowdfunding Platform",
+    description:
+      "A crowdfunding application for business and social groups to raise and manage funds collectively.",
+    problem:
+      "Groups lacked a transparent and structured way to collect, track, and manage contributions.",
+    solution:
+      "Developed a full-stack system with group management, contribution tracking, and secure backend services.",
+    tech: ["Flutter", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes"],
+    role: "Full Stack Developer"
+  },
+  {
+    name: "Football Intel",
+    description:
+      "A sports data platform providing advanced statistics, technical analysis, and match predictions for the Tanzania Premier League.",
+    problem:
+      "Clubs, analysts, and fans lacked access to structured and insightful football data.",
+    solution:
+      "Designed a data-driven platform with detailed match stats, analytics, and prediction logic tailored to the local league.",
+    tech: [
+      "Bun",
+      "Expo",
+      "Hono",
+      "Turborepo",
+      "PostgreSQL",
+      "GraphQL",
+      "Drizzle"
+    ],
+    role: "Founder / Lead Engineer"
+  },
+  {
+    name: "Fastrepo",
+    description:
+      "A CLI-based monorepo tool for managing and inspecting packages efficiently.",
+    problem:
+      "Large monorepos are hard to navigate, slow to inspect, and difficult to maintain.",
+    solution:
+      "Built a high-performance Rust CLI that analyzes monorepo structures and provides fast, actionable insights.",
+    tech: ["Rust", "CLI"],
+    role: "Founder / Lead Engineer"
+  },
+  {
+    name: "Voice AI Platform",
+    description:
+      "A web platform for managing and delivering AI-powered voice solutions.",
+    problem:
+      "Teams needed a centralized interface to manage voice content and AI-driven audio workflows.",
+    solution:
+      "Developed a modern frontend integrated with a headless CMS to manage voice data and delivery pipelines.",
+    tech: ["Next.js", "Strapi"],
+    role: "Frontend Developer"
+  },
+  {
+    name: "Bus Ticketing System",
+    description:
+      "An online bus ticketing system that allows users to reserve seats and make payments easily.",
+    problem:
+      "Passengers faced difficulties securing seats and handling manual ticketing processes.",
+    solution:
+      "Built a responsive web interface for seat selection, booking, and seamless payment integration.",
+    tech: ["Next.js", "Supabase"],
+    role: "Frontend Developer"
+  },
+  {
+    name: "ADB Blog Platform",
+    description:
+      "A blogging platform focused on publishing AI-generated and AI-assisted content.",
+    problem:
+      "Content teams needed a flexible platform to manage and publish AI-driven articles efficiently.",
+    solution:
+      "Implemented a modern frontend connected to a headless CMS for scalable content management.",
+    tech: ["React", "Next.js", "Strapi"],
+    role: "Frontend Developer"
+  },
+  {
+    name: "Event Management Platform",
+    description:
+      "An event management system with ticketing, QR code scanning, and attendee tracking.",
+    problem:
+      "Event organizers lacked efficient tools for ticket validation and crowd management.",
+    solution:
+      "Built a cross-platform system for ticket sales, QR-based check-ins, and real-time attendee monitoring.",
+    tech: ["PNPM", "Next.js", "Flutter", "PostgreSQL", "Prisma"],
+    role: "Lead Engineer"
+  },
+  {
+    name: "Internet Banking System (DCB Commercial Bank)",
+    description:
+      "A web-based internet banking platform for retail and business customers.",
+    problem:
+      "Customers needed a secure and accessible web channel for managing their bank accounts.",
+    solution:
+      "Developed user-facing banking interfaces integrated with backend services for secure and reliable transactions.",
+    tech: ["Next.js", "React", "Spring Boot", "PostgreSQL"],
+    role: "Frontend Developer"
+  },
+  {
+    name: "Opsync",
+    description:
+      "A modern office management system designed to streamline internal operations.",
+    problem:
+      "Organizations struggle with fragmented tools for managing daily office workflows.",
+    solution:
+      "Built a unified system with a scalable architecture using modern runtimes and data layers.",
+    tech: ["Bun", "Next.js", "Expo", "PostgreSQL", "Effect", "Drizzle"],
+    role: "Founder / Lead Engineer"
   }
 ];
 
