@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   title: `${profile.name} | Full-Stack Developer`,
   description: profile.headline,
   metadataBase: new URL("https://meshack.dev"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico"
+  },
   openGraph: {
     title: `${profile.name} | Developer Portfolio`,
     description: profile.headline,
