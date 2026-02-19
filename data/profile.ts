@@ -190,6 +190,19 @@ export const projects: Project[] = [
     openSource: true
   },
   {
+    name: "dMusic",
+    description:
+      "A premium local-first iOS music player built with SwiftUI, focused on smooth playback, elegant interactions, and offline reliability.",
+    problem:
+      "Many mobile music players either feel outdated or depend heavily on internet services, making local library management and high-quality playback inconsistent.",
+    solution:
+      "Built a SwiftUI app with queue-based playback, playlists, search and smart sorting, favorites, lock-screen controls, background audio, and a future-ready source abstraction (LocalSource now, RemoteSource later).",
+    tech: ["SwiftUI", "AVFoundation", "MediaPlayer", "SwiftData", "MVVM"],
+    role: "iOS Developer",
+    githubUrl: "https://github.com/meshackkazimoto/dmusic",
+    // openSource: false
+  },
+  {
     name: "Event Management Platform",
     description:
       "An event management system with ticketing, QR code scanning, and attendee tracking.",
