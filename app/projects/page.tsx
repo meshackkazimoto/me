@@ -1,6 +1,7 @@
 import { AnimatedReveal } from "@/components/AnimatedReveal";
 import { Badge } from "@/components/Badge";
 import { Card } from "@/components/Card";
+import { ProjectLinks } from "@/components/ProjectLinks";
 import { Section } from "@/components/Section";
 import { profile, projects } from "@/data/profile";
 
@@ -27,6 +28,7 @@ export default function ProjectsPage() {
                   <p className="mt-3 text-sm text-muted">
                     {project.description}
                   </p>
+                  <ProjectLinks project={project} />
                   <div className="mt-4 grid gap-4 text-sm text-muted lg:grid-cols-2">
                     <div>
                       <p className="text-xs uppercase tracking-[0.2em] text-muted">

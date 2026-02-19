@@ -5,6 +5,7 @@ import { Badge } from "@/components/Badge";
 import { ButtonLink } from "@/components/Button";
 import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
+import { ProjectLinks } from "@/components/ProjectLinks";
 import { Section } from "@/components/Section";
 import { CurrentlyBuilding } from "@/components/CurrentlyBuilding";
 import {
@@ -104,6 +105,7 @@ export default function HomePage() {
                   <p className="mt-3 text-sm text-muted">
                     {project.description}
                   </p>
+                  <ProjectLinks project={project} />
                   <div className="mt-4 space-y-3 text-sm">
                     <p>
                       <span className="text-xs uppercase tracking-[0.2em] text-muted">

@@ -12,6 +12,18 @@ export const profile = {
   }
 };
 
+export type Project = {
+  name: string;
+  description: string;
+  problem: string;
+  solution: string;
+  tech: string[];
+  role: string;
+  projectUrl?: string;
+  githubUrl?: string;
+  openSource?: boolean;
+};
+
 export const metrics = [
   { label: "Years Experience", value: "4+" },
   { label: "Products Shipped", value: "20+" },
@@ -33,7 +45,7 @@ export const techStack = [
   "Rust"
 ];
 
-export const projects = [
+export const projects: Project[] = [
   {
     name: "Winvo",
     description:
@@ -43,7 +55,10 @@ export const projects = [
     solution:
       "Built a platform where borrowers post invoices and investors fund them, with clear returns, lifecycle tracking, and secure role-based access.",
     tech: ["Next.js", "Spring Boot", "PostgreSQL", "Docker"],
-    role: "Lead Developer"
+    role: "Lead Developer",
+    projectUrl: "https://winvo.io",
+    // githubUrl: "https://github.com/meshackkazimoto/winvo",
+    // openSource: false
   },
   {
     name: "Mobile Banking App (DCB Commercial Bank)",
@@ -54,7 +69,9 @@ export const projects = [
     solution:
       "Implemented a clean and intuitive Flutter-based mobile interface focused on usability, performance, and secure transaction flows.",
     tech: ["Flutter"],
-    role: "Frontend Developer"
+    role: "Frontend Developer",
+    projectUrl: "https://apps.apple.com/tz/app/dcb-pesa-plus/id6670619861",
+    // openSource: false
   },
   {
     name: "Wakala Portal",
@@ -71,7 +88,58 @@ export const projects = [
       "Prisma",
       "WhatsApp API"
     ],
-    role: "Lead Developer"
+    role: "Lead Developer",
+    projectUrl: "https://wakalaportal.co.tz",
+  },
+  {
+    name: "Internet Banking System (DCB Commercial Bank)",
+    description:
+      "A web-based internet banking platform for retail and business customers.",
+    problem:
+      "Customers needed a secure and accessible web channel for managing their bank accounts.",
+    solution:
+      "Developed user-facing banking interfaces integrated with backend services for secure and reliable transactions.",
+    tech: ["Next.js", "React", "Spring Boot", "PostgreSQL"],
+    role: "Frontend Developer",
+    projectUrl: "https://ibankplus.dcb.co.tz",
+  },
+  {
+    name: "Voice AI Platform",
+    description:
+      "A web platform for managing and delivering AI-powered voice solutions.",
+    problem:
+      "Teams needed a centralized interface to manage voice content and AI-driven audio workflows.",
+    solution:
+      "Developed a modern frontend integrated with a headless CMS to manage voice data and delivery pipelines.",
+    tech: ["Next.js", "Strapi"],
+    role: "Frontend Developer",
+    projectUrl: "https://adbtech.ai/products/voithai",
+    // openSource: false
+  },
+  {
+    name: "ADB Blog Platform",
+    description:
+      "A blogging platform focused on publishing AI-generated and AI-assisted content.",
+    problem:
+      "Content teams needed a flexible platform to manage and publish AI-driven articles efficiently.",
+    solution:
+      "Implemented a modern frontend connected to a headless CMS for scalable content management.",
+    tech: ["React", "Next.js", "Strapi"],
+    role: "Frontend Developer",
+    projectUrl: "https://adbtech.ai",
+    // openSource: false
+  },
+  {
+    name: "Bus Ticketing System",
+    description:
+      "An online bus ticketing system that allows users to reserve seats and make payments easily.",
+    problem:
+      "Passengers faced difficulties securing seats and handling manual ticketing processes.",
+    solution:
+      "Built a responsive web interface for seat selection, booking, and seamless payment integration.",
+    tech: ["Next.js", "Supabase"],
+    role: "Frontend Developer",
+    projectUrl: "https://fasttickets.vercel.app/"
   },
   {
     name: "Crowdfunding Platform",
@@ -82,7 +150,8 @@ export const projects = [
     solution:
       "Developed a full-stack system with group management, contribution tracking, and secure backend services.",
     tech: ["Flutter", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes"],
-    role: "Full Stack Developer"
+    role: "Full Stack Developer",
+    openSource: false
   },
   {
     name: "Football Intel",
@@ -101,7 +170,10 @@ export const projects = [
       "GraphQL",
       "Drizzle"
     ],
-    role: "Founder / Lead Engineer"
+    role: "Founder / Lead Engineer",
+    // projectUrl: "https://footballintel.co.tz",
+    githubUrl: "https://github.com/meshackkazimoto/football-intel",
+    openSource: true
   },
   {
     name: "Fastrepo",
@@ -112,40 +184,10 @@ export const projects = [
     solution:
       "Built a high-performance Rust CLI that analyzes monorepo structures and provides fast, actionable insights.",
     tech: ["Rust", "CLI"],
-    role: "Founder / Lead Engineer"
-  },
-  {
-    name: "Voice AI Platform",
-    description:
-      "A web platform for managing and delivering AI-powered voice solutions.",
-    problem:
-      "Teams needed a centralized interface to manage voice content and AI-driven audio workflows.",
-    solution:
-      "Developed a modern frontend integrated with a headless CMS to manage voice data and delivery pipelines.",
-    tech: ["Next.js", "Strapi"],
-    role: "Frontend Developer"
-  },
-  {
-    name: "Bus Ticketing System",
-    description:
-      "An online bus ticketing system that allows users to reserve seats and make payments easily.",
-    problem:
-      "Passengers faced difficulties securing seats and handling manual ticketing processes.",
-    solution:
-      "Built a responsive web interface for seat selection, booking, and seamless payment integration.",
-    tech: ["Next.js", "Supabase"],
-    role: "Frontend Developer"
-  },
-  {
-    name: "ADB Blog Platform",
-    description:
-      "A blogging platform focused on publishing AI-generated and AI-assisted content.",
-    problem:
-      "Content teams needed a flexible platform to manage and publish AI-driven articles efficiently.",
-    solution:
-      "Implemented a modern frontend connected to a headless CMS for scalable content management.",
-    tech: ["React", "Next.js", "Strapi"],
-    role: "Frontend Developer"
+    role: "Founder / Lead Engineer",
+    // projectUrl: "https://fastrepo.dev",
+    githubUrl: "https://github.com/meshackkazimoto/fastrepo",
+    openSource: true
   },
   {
     name: "Event Management Platform",
@@ -156,18 +198,9 @@ export const projects = [
     solution:
       "Built a cross-platform system for ticket sales, QR-based check-ins, and real-time attendee monitoring.",
     tech: ["PNPM", "Next.js", "Flutter", "PostgreSQL", "Prisma"],
-    role: "Lead Engineer"
-  },
-  {
-    name: "Internet Banking System (DCB Commercial Bank)",
-    description:
-      "A web-based internet banking platform for retail and business customers.",
-    problem:
-      "Customers needed a secure and accessible web channel for managing their bank accounts.",
-    solution:
-      "Developed user-facing banking interfaces integrated with backend services for secure and reliable transactions.",
-    tech: ["Next.js", "React", "Spring Boot", "PostgreSQL"],
-    role: "Frontend Developer"
+    role: "Lead Engineer",
+    projectUrl: "https://event-platform-web-one.vercel.app/en",
+    githubUrl: "https://github.com/meshackkazimoto/event-platform"
   },
   {
     name: "Opsync",
@@ -178,22 +211,23 @@ export const projects = [
     solution:
       "Built a unified system with a scalable architecture using modern runtimes and data layers.",
     tech: ["Bun", "Next.js", "Expo", "PostgreSQL", "Effect", "Drizzle"],
-    role: "Founder / Lead Engineer"
+    role: "Founder / Lead Engineer",
+    githubUrl: "https://github.com/meshackkazimoto/opsync",
   }
 ];
 
 export const experiences = [
   {
-     company: "Independent",
-     title: "Founder & Lead Engineer",
-     period: "2025 -- Present",
-     achievements: [
-       "Building and maintaining production systems including Wakala Portal, Football Intel, and Opsync.",
-       "Designing and implementing full-stack solutions across web, mobile, and backend services.",
-       "Developing transaction-heavy and real-time systems with secure authentication and role-based access.",
-       "Managing system architecture, deployments, and infrastructure using Docker, VPS, and modern tooling."
-     ]
-   },
+    company: "Independent",
+    title: "Founder & Lead Engineer",
+    period: "2025 -- Present",
+    achievements: [
+      "Building and maintaining production systems including Wakala Portal, Football Intel, and Opsync.",
+      "Designing and implementing full-stack solutions across web, mobile, and backend services.",
+      "Developing transaction-heavy and real-time systems with secure authentication and role-based access.",
+      "Managing system architecture, deployments, and infrastructure using Docker, VPS, and modern tooling."
+    ]
+  },
   {
     company: "Amecore Technologies Co. Ltd",
     title: "Software Developer",
