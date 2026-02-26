@@ -314,9 +314,9 @@ export const currentlyBuilding = [
       "A WhatsApp-driven platform that automates float exchanges between agents and super agents, reducing manual coordination."
   },
   {
-    title: "Football Intel",
+    title: "Elgon",
     detail:
-      "A sports data and analytics platform for the Tanzania Premier League with advanced stats and prediction logic."
+      "A performance-first Go web framework that stays close to net/http while shipping Spring Boot-like production batteries for real-world systems."
   },
   {
     title: "Opsync",
