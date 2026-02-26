@@ -104,6 +104,20 @@ export const projects: Project[] = [
     projectUrl: "https://ibankplus.dcb.co.tz",
   },
   {
+    name: "elgon",
+    description:
+      "A performance-first Go web framework that stays close to net/http while shipping Spring Boot-like production batteries.",
+    problem:
+      "Many Go frameworks are either too minimal for production readiness or become heavy when you add logging, metrics, health checks, auth, and OpenAPI.",
+    solution:
+      "Designed a fast core (router + middleware + context) with optional production modules: health/ready/live, structured logging, metrics, OpenTelemetry, config, auth/RBAC, OpenAPI, DB adapters, migrations, and jobs—without slowing the hot path.",
+    tech: ["Go", "net/http", "OpenTelemetry", "Prometheus", "Redis", "OpenAPI"],
+    role: "Founder / Lead Engineer",
+    githubUrl: "https://github.com/meshackkazimoto/elgon",
+    projectUrl: "https://elgon-go.vercel.app",
+    openSource: true,
+  },
+  {
     name: "Voice AI Platform",
     description:
       "A web platform for managing and delivering AI-powered voice solutions.",
